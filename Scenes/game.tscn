@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://b8fpxbty20vi8"]
+[gd_scene load_steps=4 format=3 uid="uid://b8fpxbty20vi8"]
 
 [ext_resource type="PackedScene" uid="uid://cyv8o2vpwimvj" path="res://Scenes/player.tscn" id="1_ebmjs"]
+[ext_resource type="PackedScene" uid="uid://dpp3mbh2fjjui" path="res://Scenes/Scissors.tscn" id="2_qxrlw"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ebmjs"]
 
@@ -27,3 +28,6 @@ shape = SubResource("WorldBoundaryShape2D_ebmjs")
 position = Vector2(-5.34058e-05, -1152)
 rotation = -3.14159
 shape = SubResource("WorldBoundaryShape2D_ebmjs")
+
+[node name="Scissors" parent="." instance=ExtResource("2_qxrlw")]
+position = Vector2(118, -74)
