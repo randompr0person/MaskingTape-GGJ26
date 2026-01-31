@@ -1,0 +1,86 @@
+[gd_scene load_steps=5 format=3 uid="uid://dqh1sbcdyfsne"]
+
+[ext_resource type="Script" uid="uid://cmotve7nt7noi" path="res://Scripts/main_menu.gd" id="1_7vrkn"]
+[ext_resource type="Texture2D" uid="uid://cuywrwwx72qnw" path="res://Assets/Sprites/masking tape man idle.png" id="2_48xlc"]
+[ext_resource type="FontFile" uid="uid://bxwjkfgos4i3e" path="res://Assets/Fonts/MadernsComic.ttf" id="3_1ehe0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7vrkn")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -162.0
+offset_top = -24.0
+offset_right = 162.0
+offset_bottom = 74.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
+text = "Start The Fight"
+
+[node name="Button" type="Button" parent="Button"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -162.0
+offset_top = 114.0
+offset_right = 162.0
+offset_bottom = 212.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
+text = "Exit"
+
+[node name="MaskingTapeManIdle" type="Sprite2D" parent="."]
+position = Vector2(208, 369)
+scale = Vector2(0.213869, 0.215278)
+texture = ExtResource("2_48xlc")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -70.0
+offset_top = -249.0
+offset_right = 71.0
+offset_bottom = -79.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_1ehe0")
+theme_override_font_sizes/font_size = 54
+text = "Battle
+Of The
+Tape"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Button/Button" to="." method="_on_exit_pressed"]
