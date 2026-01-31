@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://dqh1sbcdyfsne"]
+[gd_scene load_steps=5 format=3 uid="uid://daqjcfoto7i6v"]
 
-[ext_resource type="Script" uid="uid://cmotve7nt7noi" path="res://Scripts/main_menu.gd" id="1_7vrkn"]
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_7vrkn"]
 [ext_resource type="Texture2D" uid="uid://cuywrwwx72qnw" path="res://Assets/Sprites/masking tape man idle.png" id="2_48xlc"]
 [ext_resource type="FontFile" uid="uid://bxwjkfgos4i3e" path="res://Assets/Fonts/MadernsComic.ttf" id="3_1ehe0"]
 
