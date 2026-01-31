@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://cyv8o2vpwimvj"]
+
+[ext_resource type="Texture2D" uid="uid://cuywrwwx72qnw" path="res://Assets/Sprites/masking tape man idle.png" id="1_cvnsp"]
+[ext_resource type="Texture2D" uid="uid://bve7ps2wsbuvj" path="res://Assets/Sprites/masked tape man.png" id="1_v0iea"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cvnsp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cvnsp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_v0iea")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6t5aa"]
+radius = 7.0
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2.64633, -128.354)
+scale = Vector2(0.162646, 0.162646)
+sprite_frames = SubResource("SpriteFrames_cvnsp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.353668, -125.354)
+scale = Vector2(8.36766, 8.36766)
+shape = SubResource("CapsuleShape2D_6t5aa")
