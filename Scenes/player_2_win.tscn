@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cjcx2j1yghqge"]
+[gd_scene load_steps=3 format=3 uid="uid://cycfn86e0j3bl"]
 
-[ext_resource type="Script" uid="uid://dsgttogu5so6e" path="res://player_2_win.gd" id="1_y4rgy"]
+[ext_resource type="Script" path="res://player_2_win.gd" id="1_y4rgy"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ogtmd"]
 

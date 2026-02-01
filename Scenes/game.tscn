@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b8fpxbty20vi8"]
+[gd_scene load_steps=6 format=3 uid="uid://b8fpxbty20vi8"]
 
+[ext_resource type="Texture2D" uid="uid://dcyvxvspapw2h" path="res://Assets/Sprites/CardboardBackground.png" id="1_3dryh"]
 [ext_resource type="PackedScene" uid="uid://cyv8o2vpwimvj" path="res://Scenes/player.tscn" id="1_ebmjs"]
-[ext_resource type="Script" uid="uid://b5w57upuo6c5y" path="res://Scenes/player2.gd" id="2_qxrlw"]
+[ext_resource type="Script" path="res://Scenes/player2.gd" id="2_qxrlw"]
+[ext_resource type="Texture2D" uid="uid://b523t48j7dmin" path="res://Assets/Sprites/RulerFloor.png" id="4_wowpa"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ebmjs"]
 
@@ -9,6 +11,11 @@
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -134)
+
+[node name="CardboardBackground" type="Sprite2D" parent="."]
+position = Vector2(3, -274)
+scale = Vector2(0.161333, 0.120751)
+texture = ExtResource("1_3dryh")
 
 [node name="Player" parent="." instance=ExtResource("1_ebmjs")]
 position = Vector2(-382, -25)
@@ -35,3 +42,7 @@ shape = SubResource("WorldBoundaryShape2D_ebmjs")
 position = Vector2(312, -31)
 scale = Vector2(-0.5, 0.5)
 script = ExtResource("2_qxrlw")
+
+[node name="RulerFloor" type="Sprite2D" parent="."]
+position = Vector2(-25, 280)
+texture = ExtResource("4_wowpa")
