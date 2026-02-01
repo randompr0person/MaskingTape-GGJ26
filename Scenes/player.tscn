@@ -42,7 +42,7 @@ scale = Vector2(8.36766, 8.36766)
 script = ExtResource("4_vgqql")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Kill Zone"]
-position = Vector2(2.28243, -5.2369)
+position = Vector2(-1.46196, -3.948)
 scale = Vector2(0.7, 0.7)
 shape = SubResource("CapsuleShape2D_6t5aa")
 

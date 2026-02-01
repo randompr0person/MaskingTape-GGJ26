@@ -1,0 +1,66 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0ijrbbkehhfm"]
+
+[ext_resource type="Script" uid="uid://chocebqjqxyy4" path="res://masking_win.gd" id="1_0m7sb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gyjb0"]
+
+[node name="MaskingWin" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0m7sb")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 489.0
+offset_top = 219.0
+offset_right = 674.0
+offset_bottom = 318.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_gyjb0")
+text = "Play Again"
+
+[node name="Button" type="Button" parent="Button"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -92.5
+offset_top = 87.5
+offset_right = 92.5
+offset_bottom = 186.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_gyjb0")
+text = "Exit"
+
+[node name="Label" type="Label" parent="Button"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -161.5
+offset_top = -199.5
+offset_right = 220.5
+offset_bottom = -124.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.996984, 1)
+theme_override_font_sizes/font_size = 26
+text = "I dont know who won but
+ congrats to the winner"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Button/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button/Button" to="." method="_on_quit_pressed"]
