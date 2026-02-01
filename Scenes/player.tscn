@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cvumhtki4dmok" path="res://Scripts/player.gd" id="1_6t5aa"]
 [ext_resource type="Texture2D" uid="uid://cuywrwwx72qnw" path="res://Assets/Sprites/masking tape man idle.png" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://bve7ps2wsbuvj" path="res://Assets/Sprites/masked tape man.png" id="1_v0iea"]
-[ext_resource type="Script" uid="uid://dsd7cmkikuuph" path="res://Scenes/kill_zone.gd" id="4_vgqql"]
+[ext_resource type="Script" path="res://Scenes/kill_zone.gd" id="4_vgqql"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cvnsp"]
 animations = [{
@@ -42,7 +42,7 @@ scale = Vector2(8.36766, 8.36766)
 script = ExtResource("4_vgqql")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Kill Zone"]
-position = Vector2(-1.46196, -3.948)
+position = Vector2(2.31297, -5.61358)
 scale = Vector2(0.7, 0.7)
 shape = SubResource("CapsuleShape2D_6t5aa")
 

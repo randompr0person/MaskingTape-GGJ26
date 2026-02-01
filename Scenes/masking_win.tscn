@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://b0ijrbbkehhfm"]
+[gd_scene load_steps=3 format=3 uid="uid://cg8t7ofsbph7i"]
 
-[ext_resource type="Script" uid="uid://chocebqjqxyy4" path="res://masking_win.gd" id="1_0m7sb"]
+[ext_resource type="Script" path="res://masking_win.gd" id="1_0m7sb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gyjb0"]
 
@@ -49,16 +49,16 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -161.5
-offset_top = -199.5
-offset_right = 220.5
-offset_bottom = -124.5
+offset_left = -270.5
+offset_top = -247.5
+offset_right = 276.5
+offset_bottom = -78.5
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.996984, 1)
-theme_override_font_sizes/font_size = 26
-text = "I dont know who won but
- congrats to the winner"
+theme_override_font_sizes/font_size = 60
+text = "Masking Tape man wins
+       (but which one?)"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_play_pressed"]
