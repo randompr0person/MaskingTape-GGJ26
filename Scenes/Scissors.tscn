@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpp3mbh2fjjui"]
+
+[ext_resource type="Texture2D" uid="uid://be6rs626u73a8" path="res://Assets/Sprites/scizors.png" id="1_7g7ur"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_7g7ur"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7p3tj"]
+size = Vector2(20, 60)
+
+[node name="Scissors" type="RigidBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_7g7ur")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, -23)
+shape = SubResource("RectangleShape2D_7p3tj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1, -22)
+scale = Vector2(0.032, 0.032)
+texture = ExtResource("1_7g7ur")
